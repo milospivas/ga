@@ -364,11 +364,11 @@ def plot_ga(p, max_fitness, max_chromosome, num, selection):
     ax.set_aspect('equal')
     SearchSpace.plot2d(ax)
     p.plot(ax)
-    plt.title(selection+", "+str(num)+" generacija")
+    plt.title(selection+", "+str(num)+" generation(s)")
     
     ax = plt.subplot(1, 2, 2)
     ax.plot(np.arange(num), max_fitness)
-    plt.xlabel("#generacija")
+    plt.xlabel("#generations")
     plt.title("max fitness")
 
 def run_and_plot(p, num, selection):
